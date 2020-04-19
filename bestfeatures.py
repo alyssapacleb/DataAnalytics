@@ -6,7 +6,7 @@ from sklearn.feature_selection import mutual_info_classif
 
 ## Subroutine to compute mutual info classification score for each column in a DataFrame
 ## call this repeatedly to see if feature engineering has resulted in improved features
-def best_features(df, target_name='cand_pty_affiliation', seed=1234567):
+def best_features(df, target_name='cmte_pty', seed=1234567):
     """
     Prints the estimated feature importance score of the columns in the data_frame 
     (feature importance here is the mutual information between the target and predictor)
